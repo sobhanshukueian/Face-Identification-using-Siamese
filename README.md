@@ -26,7 +26,7 @@ For trianing siamese networks we need two kind of pairs to feed network:
 *   **Positive pairs:** Similar pairs or a person's face image(label = 0).
 *   **Negative pairs**  Dissimilar pairs or different person face images(label = 1).
 
-I should have balanced positive and negative pairs, so I implemented the create_data() function that generates pairs. In this function, I choose an image randomly, then select randomly n(size of classes or persons) positive pairs, and then from each class, I choose an image as a negative pair, so the amount of positive and negative pairs are balanced and in each batch we have both positive and negative pairs in balanced amount. 
+I should have balanced positive and negative pairs, so I implemented the ```create_data()``` function that generates pairs. In this function, I choose an image randomly, then select randomly n(size of classes or persons) positive pairs, and then from each class, I choose an image as a negative pair, so the amount of positive and negative pairs are balanced and in each batch we have both positive and negative pairs in balanced amount. 
 
 ![image](https://user-images.githubusercontent.com/47561760/193102226-2af72580-885f-42a4-ae4a-457f2f5e3388.png)
 
